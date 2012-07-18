@@ -2,3 +2,6 @@
 *.pyc
 *~
 *.swp
+/build
+/dist
+/upyun_ft.egg-info
