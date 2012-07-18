@@ -5,7 +5,7 @@ from setuptools import setup
 
 import os, re
 
-path = os.path.join(os.path.dirname(__file__), 'gshell', '__init__.py')
+path = os.path.join(os.path.dirname(__file__), 'upyun', '__init__.py')
 init_py = open(path).read()
 VERSION = re.match("__version__ = '([^']+)'", init_py).group(1)
 
@@ -13,7 +13,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    scripts= ['scripts/upyun-ft']
+    scripts= ['scripts/upyun-ft'],
     name = 'upyun-ft',
     version = VERSION,
     url = 'https://geakit.com/dingyan/upyun-ft',
