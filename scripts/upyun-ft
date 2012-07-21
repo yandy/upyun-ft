@@ -1,5 +1,5 @@
-# -*- coding: utf8 -*-
 #!/usr/bin/env python
+# -*- coding: utf8 -*-
 
 from upyun import UpYun,md5,md5file
 import sys, os
