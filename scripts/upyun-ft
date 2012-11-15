@@ -41,7 +41,7 @@ if __name__ == '__main__':
             data = open(os.path.join(root, f), 'rb')
             u.setContentMD5(md5file(data))
             upfp = os.path.relpath(os.path.join(root, f), path)
-            a = u.writeFile(upfp, data)
+            a = u.writeFile(upfp, data, True)
             print a
         dirs.remove(".git")
         if not kwargs["recursion"]:
