@@ -43,6 +43,7 @@ if __name__ == '__main__':
             upfp = os.path.relpath(os.path.join(root, f), path)
             a = u.writeFile(upfp, data, True)
             print a
-        dirs.remove(".git")
+        if ".git" in dirs:
+            dirs.remove(".git")
         if not kwargs["recursion"]:
             del dirs[0:len(dirs)]
