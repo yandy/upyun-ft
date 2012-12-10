@@ -36,7 +36,7 @@ if __name__ == '__main__':
     u = UpYun(bucket, username, password)
 
     path = kwargs["path"]
-    tpath = kwargs["tpath"]
+    tpath = kwargs["tpath"] or ""
 
     for root, dirs, files in os.walk(path):
         for f in files:
